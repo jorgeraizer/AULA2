@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <button onclick="Calcular();"> OK </button>
+    <div id="resultado">  </div>
+</body>
+<script>
+    function Calcular()
+    {
+       n1 = -1;
+       while (n1<0)
+       {
+           n1 = prompt("DIGITE N1:");
+           if (n1=="")
+           {
+               n1 = -1;
+
+           }
+           n1 = parseFloat(n1);
+           if (n1<0)
+           {
+               alert("VALOR INVÁLIDO");
+           }
+       }
+       n2 = -1;
+       while (n2<0)
+       {
+           n2 = prompt("DIGITE N2:");
+           if (n2=="")
+           {
+               n2 = -1;
+
+           }
+           n2 = parseFloat(n2);
+           if (n2<0)
+           {
+               alert("VALOR INVÁLIDO");
+           }
+           if (n1>=0 && n2>=0)
+           resultado.innerHTML = n1 + n2;
+       }
+
+    }
+</script>
+</html>
